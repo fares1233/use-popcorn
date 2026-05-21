@@ -34,8 +34,11 @@ export function useMovies(query) {
 
                     setMovies(data.Search);
                     setError("");
-                } catch (err) {
-                    if (err.name !== "AbortError") setError(err.message);
+                                } catch (err) {
+                    if (err.name !== "AbortError") {
+                        setError(err.message);
+                        setMovies([]);
+                    }
                 } finally {
                     setIsLoading(false);
                 }

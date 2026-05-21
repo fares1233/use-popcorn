@@ -379,3 +379,104 @@ EMPTY STAR
 </svg>
 
 */
+
+/* RESPONSIVE DESIGN MEDIA QUERIES */
+
+/* For Tablet/Desktop transition */
+@media (max-width: 900px) {
+  .search {
+    width: 30rem;
+  }
+}
+
+/* For Mobile and Tablet screens */
+@media (max-width: 768px) {
+  body {
+    padding: 1.2rem;
+  }
+
+  .nav-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    padding: 1.6rem 2rem;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .search {
+    justify-self: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .num-results {
+    justify-self: center;
+  }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 100%;
+    height: 55rem;
+  }
+
+  .summary div {
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .summary p {
+    font-size: 1.4rem;
+  }
+}
+
+/* For small Mobile screens */
+@media (max-width: 576px) {
+  .details header {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background-100);
+  }
+
+  .details img {
+    width: 100%;
+    max-height: 40rem;
+    object-fit: cover;
+  }
+
+  .details-overview {
+    padding: 2rem 2.4rem;
+  }
+
+  .details section {
+    padding: 2.4rem;
+    gap: 1.2rem;
+  }
+
+  .list li {
+    padding: 1.2rem 1.6rem;
+    column-gap: 1.6rem;
+  }
+
+  .btn-delete {
+    right: 1.6rem;
+  }
+
+  .rating {
+    padding: 1.6rem 2rem;
+    gap: 1.6rem;
+  }
+}
+
